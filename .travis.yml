@@ -18,11 +18,17 @@ after_success:
   - docker push maakkuu/multi-server
   - docker push maakkuu/multi-nginx
   - docker push maakkuu/multi-worker
-region: ap-southeast-1
+
+deploy:
+  provider: elasticbeanstalk
+  region: ap-southeast-1
   app: multi-docker
   env: MultiDocker-env
   bucket_name: elasticbeanstalk-ap-southeast-1-307882631086
   bucket_path: docker-multi
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
+  on:
+    branch: main
+
 
