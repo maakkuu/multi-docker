@@ -15,9 +15,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Downloads\149-opening\complex\client" />
+      <recent name="C:\Users\PC\Downloads\149-opening\complex\nginx" />
+      <recent name="C:\Users\PC\Downloads\149-opening\complex\server" />
+      <recent name="C:\Users\PC\Downloads\149-opening\complex\worker" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -27,7 +35,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630236480825</updated>
-      <workItem from="1630236482125" duration="322000" />
+      <workItem from="1630236482125" duration="2037000" />
     </task>
     <servers />
   </component>

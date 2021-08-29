@@ -1,0 +1,21 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker image build -t maakkuu/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker container run -e CI=true USERNAME/react-test npm test
+
+after_success:
+  - docker image build -t maakkuu/multi-client ./client
+  - docker image build -t maakkuu/multi-server ./server
+  - docker image build -t maakkuu/multi-nginx ./nginx
+  - docker image build -t maakkuu/multi-worker ./worker
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker push maakkuu/multi-client
+  - docker push maakkuu/multi-server
+  - docker push maakkuu/multi-nginx
+  - docker push maakkuu/multi-worker
+
